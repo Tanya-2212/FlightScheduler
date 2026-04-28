@@ -2,13 +2,10 @@ import { AppBar, Box, Container, Paper, Stack, Toolbar, Typography } from '@mui/
 import { alpha, styled } from '@mui/material/styles'
 
 export const PageRoot = styled(Box)(({ theme }) => ({
-  minHeight: '100dvh',
+  height: '100dvh',
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
-  [theme.breakpoints.down('md')]: {
-    overflow: 'auto',
-  },
   backgroundColor: theme.palette.background.default,
   backgroundImage: `radial-gradient(1200px 400px at 20% 0%, ${alpha(
     theme.palette.primary.main,
