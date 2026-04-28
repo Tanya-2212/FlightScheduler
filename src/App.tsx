@@ -47,7 +47,7 @@ export default function App() {
     let cancelled = false
     async function load() {
       try {
-        const res = await fetch('/flights.json')
+        const res = await fetch(`${import.meta.env.BASE_URL}flights.json`)
         const json = (await res.json()) as FlightsJson
         if (!cancelled) setAllFlights(json.flights)
       } finally {
