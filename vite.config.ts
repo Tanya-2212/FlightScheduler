@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/FlightScheduler/',
   plugins: [react()],
   server: {
     host: true,
@@ -9,4 +10,3 @@ export default defineConfig({
     strictPort: true,
   },
 })
-

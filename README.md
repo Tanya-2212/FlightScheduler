@@ -1,5 +1,9 @@
 # FlightScheduler — Flight Schedule Management Table
 
+## Live Demo
+
+GitHub Pages: https://tanya-2212.github.io/FlightScheduler/
+
 ## Setup
 
 ```bash
@@ -18,4 +22,3 @@ If your environment can’t resolve `localhost`, use `http://127.0.0.1:8080` ins
 ## Data
 
 Flight data is loaded once on mount from `public/flights.json` and managed fully in client-side state.
-
